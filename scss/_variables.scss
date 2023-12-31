@@ -1,0 +1,16 @@
+@function makeBorder($size: 1px, $color: rgb(0, 0, 0)) {
+  @return $size solid $color ;
+}
+
+@font-face {
+  font-family: 'miri';
+    src: url('../fonts/Miri.eot') ;
+    src: url('../fonts/Miri.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Miri.woff2') format('woff2'), 
+        url('../fonts/Miri.woff') format('woff'), 
+        url('../fonts/Miri.ttf')  format('truetype'), 
+        url('../fonts/Miri.svg#svgFontName') format('svg') ;
+    font-weight: 400 ;
+    font-style: normal ;
+    font-display: swap ;
+}

@@ -1,0 +1,87 @@
+@import 'variables' ;
+
+.main {
+  margin-top: 50px ;
+
+  &--make-an-order {
+    position: relative ;
+    background: url('../images/delicious-pizza.png') ;
+    background-size: cover ;
+    background-position: 50% ;
+    height: 300px ;
+    text-align: center ;
+
+    &-title {
+      span {
+        font-size: 30px ;
+      }
+    }
+
+    &-button {
+      position: absolute ;
+      top: 50% ;
+      left: 50% ;
+      transform: translate(-50%, -50%) ;
+      background: rgb(255, 255, 255) ;
+      border: makeBorder() ;
+      border-radius: 15px ;
+      padding: 10px 15px ;
+      font-size: 20px ;
+      font-weight: bold ;
+      cursor: pointer ;
+    }
+  }
+
+  &--about-us,
+  &--our-pizzas,
+  &--menu,
+  &--order {
+    display: flex ;
+    position: relative ;
+    flex-direction: column ;
+    text-align: center ;
+    opacity: 0 ;
+    font-family: Alef, sans-serif ;
+    transform: translateY(50px) ;
+    transition: opacity 0.8s, transform 0.8s ;
+
+    h1 {
+      margin-bottom: 0 ;
+    }
+    
+    h3 {
+      margin-top: 0 ;
+      font-weight: 400 ;
+    }
+
+    &::before {
+      display: block ;
+      content: "" ;
+      align-self: center ;
+      width: 20% ;
+      height: 20px ;
+      background: rgb(178, 178, 3) ;
+    }
+
+    @media screen and (max-width: 550px) {
+      margin: 20px ;
+    }
+
+    @media screen and (min-width: 551px) and (max-width: 750px) {
+      margin: 20px 40px ;
+    }
+
+    @media screen and (min-width: 751px) {
+      margin: 20px 60px ;
+    }
+  }
+
+  .fly-in {
+    opacity: 1 ;
+    transform: translateY(0) ;
+  }
+
+  #map { 
+    height: 300px ; 
+  }
+}

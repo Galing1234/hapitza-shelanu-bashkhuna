@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>הפיצרייה שלנו בשכונה</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#main--about-us">
+      <div class="nav--section"> 
+        קצת עלינו
+      </div>
+    </a>
+
+    <a href="#main--our-pizzas">
+      <div class="nav--section">
+        הפיצות שלנו
+      </div>
+    </a>
+
+    <a href="#main--order">
+      <div class="nav--section">
+        הזמינו
+      </div>
+    </a>
+  </nav>
+
+  <header class="header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" id="menu-icon" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+
+    <div class="header--title title">
+      <a href="index.html">
+        <span style="color: rgb(0, 0, 0)">הפיצרייה שלנו</span>
+        <span style="color: rgb(0, 0, 255)">בשכונה</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main--make-an-order">
+      <div class="main--make-an-order-title title">
+        <span style="color: rgb(0, 0, 0)">הפיצרייה שלנו</span> <br />
+        <span style="color: rgb(0, 0, 255)">בשכונה</span>
+      </div>
+
+      <a href="#main--order">
+        <button class="main--make-an-order-button">
+          הזמינו!
+        </button>
+      </a>
+    </section>
+
+    <section id="main--about-us" class="main--about-us">
+      <h1>קצת עלינו</h1>
+      <h3>
+        ברוכים הבאים לפיצרייה שלנו בשכונה, מסעדת הפיצה הפופולרית ביותר בתל אביב מאז 1986.
+        ממרגריטות קלאסיות ועד אמריקן פיצה, כל אחת מהנתחים שלנו היא מעולה וטעימה.
+        מבקרים מפורסמים בפיצרייה שלנו בשכונה כוללים את שושנה אביבית, ברוך בן שחר וגליה יפתח.
+        בפיצרייה שלנו בשכונה אנחנו מזמינים אתכם להתענג לא רק על פיצה אלא מהסיפורים שהופכים אותה ליוצאת דופן.
+      </h3>
+    </section>
+
+    <section id="main--our-pizzas" class="main--our-pizzas">
+      <h1>הפיצות שלנו</h1>
+
+      <h3>
+        חלק מהפיצות שלנו כוללות את האמריקאית הקלאסית עם תערובת נדיבה של תוספות, את מרגריטה שתופסת את תמצית הפשטות, ואת הנפוליטנית, המוכנה בטכניקות מסורתיות.
+      </h3>
+    </section>
+
+    <section id="main--order" class="main--order">
+      <h1>הזמינו</h1>
+      <h3>
+        מחכים לכם!
+      </h3>
+
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    כל הזכויות שמורות לגל אורון ©
+  </footer>
+
+  <script type="module" src="src/index.js"></script>
+</body>
+</html>
